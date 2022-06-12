@@ -1,0 +1,12 @@
+# Folders
+**/temp/
+**/cache/
+**/logs/
+**/node_modules/
+
+# Files by type
+*.log
+*.env
+
+# Files by name
+config.*

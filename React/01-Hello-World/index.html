@@ -70,7 +70,12 @@
             var list = getExercises();
             generateSelect(list);
         }
-
+        // create a basic menu with title on the left and a select on the right
+        document.body.insertBefore(
+            document.createElement('div'),
+            document.body.firstChild
+        );
+        document.getElementsByTagName('div')[0].innerHTML = 'Playbook<hr>';
     </script>
 </body>
 
