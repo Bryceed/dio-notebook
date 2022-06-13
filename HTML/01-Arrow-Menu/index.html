@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Menu</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to right, #b276f7 0%, #a6c1ee 51%, #b280ef 100%);
+    }
+    ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li a {
+        position: relative;
+        font-size: 2em;
+        color: rgb(40, 40, 40);
+        text-decoration: none;
+        margin: 10px 0;
+        display: inline-block;
+        padding: .25em .5em;
+        font-weight: bold;
+    }
+    #marker {
+        position: absolute;
+        height: 2.5em;
+        width: 0;
+        background-color: rgba(197, 22, 241, 0);
+        top: 0px;
+        transition: .15s ease-out;
+        margin: .5em;
+        border-radius: .5em;
+    }
+    #marker::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 1em;
+        height: 1em;
+        border-top: .33em solid rgb(81, 12, 145);
+        border-right: .33em solid rgb(116, 23, 230);
+        transform: rotate(45deg) translate(-1.4em, 2em);
+    }
+    .text-danger {
+        color: rgba(81, 0, 255, 0.68);
+    }
+
+    @media screen and (max-width: 260px) {
+        ul li a {
+            font-size: 10vmin
+        }
+        #marker {
+            height: 10vmin;
+            margin: 0vmin;
+        }
+        #marker::after {
+            width: 5vmin;
+            height: 5vmin;
+            transform: rotate(45deg) translate(-.7vmin, 2vmin);
+        }
+    }
+</style>
+
+<body>
+    <ul>
+        <span id="marker"></span>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recentes</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Fóruns</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#" class="text-danger">GitHub</a></li>
+    </ul>
+
+    <script>
+        let marker = document.querySelector('#marker');
+        let item = document.querySelectorAll('ul li a');
+        let target = 0;
+
+        function setIndicator(e) {
+            marker.style.top = e.offsetTop + 'px';
+            marker.style.width = e.offsetWidth + 'px';
+        }
+
+        item.forEach(link => {
+            link.addEventListener('mousemove', (e) => {
+                if (marker.style.transition != '0'){
+                    marker.style.transition = '.3s ease-out';
+                }
+                setIndicator(e.target);
+                target = e.target;
+            })
+            link.addEventListener('keyup', (e) => {
+                marker.style.transition == '0';
+                setIndicator(e.target);
+                target = e.target;
+            })
+        });
+
+        window.addEventListener('resize', () => {
+            if (target) {
+                setIndicator(target);
+            }else{
+                marker.style.transition = '0';
+                marker.style.width = '0';
+            }
+        });
+        setIndicator(item[0]);
+    </script>
+</body>
+</html>
