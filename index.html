@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playbook</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./bootstrap.min.css" rel="stylesheet">
 </head>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-brand {
+        margin-right: 1.5rem;
+    }
+
+    .cardItem {
+        position: relative;
+        top: 0;
+        transition: ease-in .04s;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .cardItem:hover {
+        position: relative;
+        top: -5px;
+        transition: ease-out .2s;
+        filter: brightness(1.2);
+        background: #ffffff0d !important;
+        box-shadow: 0 0 16px rgb(255 255 255 / 50%), 0 0 48px rgb(255 255 255 / 20%);
+    }
+</style>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand text-bold" href="#/"><b>Playbook</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#/">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorias
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#/php">PHP</a></li>
-                            <li><a class="dropdown-item" href="#/js">JavaScript</a></li>
-                            <li><a class="dropdown-item" href="#/html">HTML</a></li>
-                            <li><a class="dropdown-item" href="#/css">CSS</a></li>
-                            <li><a class="dropdown-item" href="#/mysql">MySQL</a></li>
-                            <li><a class="dropdown-item" href="#/git">Git</a></li>
-                            <li><a class="dropdown-item" href="#/nodejs">NodeJS</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/Bryceed?utm_source=playbook">GitHub</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-10 offset-1">
-                <h1>Playbook</h1>
-                <p>Playbook é um blog com códigos e tutoriais estudados (como um caderno digital).</p>
-                <p>Este é um projeto pessoal, que tem como objetivo registrar o que estou aprendendo.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-10 offset-1">
-                    <div id="content" class="row"></div>
-
-                    </div>
+    <div class="container bg-primary">
+        <div class="col-10 offset-1">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand text-bold" href="#/"><b>Playbook</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#/html">HTML</a></li>
+                                <li><a class="dropdown-item" href="#/css">CSS</a></li>
+                                <li><a class="dropdown-item" href="#/js">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#/php">PHP</a></li>
+                                <li><a class="dropdown-item" href="#/mysql">MySQL</a></li>
+                                <li><a class="dropdown-item" href="#/nodejs">NodeJS</a></li>
+                                <li><a class="dropdown-item" href="#/react">React</a></li>
+                                <li><a class="dropdown-item" href="#/flutter">Flutter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Bryceed?utm_source=playbook"><b>GitHub</b></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
 
-    <footer class="footer mt-auto py-3 bg-warning text-center">
-        <p>Playbook - <span id="year"></span></p>
+    <div class="container my-5" style="min-height: calc(100vh - 225px);">
+        <div id="pageIntroduction"></div>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div id="content" class="row"></div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 text-center" style="background: #111844;">
+        <p><b>Playbook</b> (<span id="year"></span>) by <b>Wellington N.</b></p>
     </footer>
 </body>
 <script>
@@ -75,7 +102,7 @@
 
     // Variables
     var data = getContent();
-    var year = new Date().getFullYear().then((year) => document.getElementById("year").innerHTML = year);
+    var year = new Date().getFullYear();
 
     // Functions
     async function getContent() {
@@ -99,57 +126,102 @@
         var $content = "";
 
         if ($hash == "#/" || $hash == "#") {
+            document.querySelector("#pageIntroduction").innerHTML =
+                `<div class="row">
+                <div class="col-10 offset-1">
+                    <h1 class="mb-4 display-3">Boas-vindas!</h1>
+                    <p>Olá! O Playbook é um dev blog com códigos e exemplificação de diversas tecnologias.</p>
+                    <p>A princípio, este é um projeto pessoal, que tem como objetivo registrar o que estou aprendendo ao decorrer do tempo, logo, não me responsabilizo pelo uso indevido, muito menos para manutenção do código ou servidor.</p>
+                    <p>Se você gostou da ideia, pode contribuir com o projeto no <a href="https://github.com/Bryceed/playbook" target="_blank">GitHub</a>.</p><br>
+                </div>
+            </div>`;
             $data.projects.forEach((project) => {
                 for (var key in project) {
                     var category = key;
                     if (project[category].length != 0) {
-                        $content += `<div class="col-12"> <h2>${category}</h2> </div>`;
-                        for (var key in project[category]) {
-                            $content += `<div class="bg-muted col-12 col-md-6 col-lg-4 col-xl-3 col-sm-6 card g-3 px-3 py-3 gx-3">`;
-                            $content += `<h3>${project[category][key].title}</h3>`;
-                            $content += `<p>${project[category][key].description}</p>`;
-                            $content += `<a href="${project[category][key].file}" class="btn btn-primary">Ver</a>`;
-                            $content += `</div>`;
+                        var category = key;
+                        if (project[category].length != 0) {
+                            $content += `<div class="col-12 mt-5"> <h2>${category}</h2> </div>`;
+                            for (var key in project[category]) {
+                                $content += `<div class="cardItem bg-muted col-12 col-md-6 col-lg-4 col-xl-3 col-sm-6 card g-3 p-0 bg-dark">`;
+                                if (project[category][key].image != null && project[category][key].image != "") {
+                                    $content += `<img src="${project[category][key].image}" class="card-img-top" alt="${project[category][key].title}">`;
+                                }
+                                $content += `<div class="p-3"><h3>${project[category][key].title}</h3>`;
+                                $content += `<p>${project[category][key].description}</p>`;
+                                if (project[category][key].file != null) {
+                                    $content += `<a href="${project[category][key].file}" class="btn btn-primary">Ver</a>&nbsp;`;
+                                }
+                                if (project[category][key].url != null) {
+                                    $content += `<a href="${project[category][key].url}" class="btn btn-primary" target="_blank">Acessar</a>&nbsp;`;
+                                }
+                                if (project[category][key].code != null) {
+                                    $content += `<a href="${project[category][key].github}" class="btn btn-primary" target="_blank">Código</a>&nbsp;`;
+                                }
+                                $content += `</div></div>`;
+                            }
                         }
                     }
                 }
             });
         } else {
+            document.querySelector("#pageIntroduction").innerHTML = "";
             $data.projects.forEach((project) => {
                 for (var key in project) {
                     if (key.toLowerCase() == $hash.replace("#/", "")) {
                         var category = key;
                         if (project[category].length != 0) {
-                            $content += `<div class="col-12"> <h2>${category}</h2> </div>`;
-                            for (var key in project[category]) {
-                                $content += `<div class="bg-muted col-12 col-md-6 col-lg-4 col-xl-3 col-sm-6 card g-3 px-3 py-3 gx-3">`;
-                                $content += `<h3>${project[category][key].title}</h3>`;
-                                $content += `<p>${project[category][key].description}</p>`;
-                                $content += `<a href="${project[category][key].file}" class="btn btn-primary">Ver</a>`;
-                                $content += `</div>`;
+                            var category = key;
+                            if (project[category].length != 0) {
+                                $content += `<div class="col-12"> <h2>${category}</h2> </div>`;
+                                for (var key in project[category]) {
+                                    $content += `<div class="cardItem bg-muted col-12 col-md-6 col-lg-4 col-xl-3 col-sm-6 card g-3 p-0 bg-dark">`;
+                                    if (project[category][key].image != null && project[category][key].image != "") {
+                                        $content += `<img src="${project[category][key].image}" class="card-img-top" alt="${project[category][key].title}">`;
+                                    }
+                                    $content += `<div class="p-3"><h3>${project[category][key].title}</h3>`;
+                                    $content += `<p>${project[category][key].description}</p>`;
+                                    if (project[category][key].file != null) {
+                                        $content += `<a href="${project[category][key].file}" class="btn btn-primary">Ver</a>&nbsp;`;
+                                    }
+                                    if (project[category][key].url != null) {
+                                        $content += `<a href="${project[category][key].url}" class="btn btn-primary" target="_blank">Acessar</a>&nbsp;`;
+                                    }
+                                    if (project[category][key].code != null) {
+                                        $content += `<a href="${project[category][key].github}" class="btn btn-primary" target="_blank">Código</a>&nbsp;`;
+                                    }
+                                    $content += `</div></div>`;
+                                }
                             }
                         }
                     } else if (project[key].length == 0 || project[key].length == undefined) {
                         $content = `<div class="col-12">`;
-                        $content += `<p class="alert alert-warning">#0 Não há projetos criados.</p>`;
+                        $content += `<p class="alert alert-warning">ERROR #2: Não há projetos criados.</p>`;
                         $content += `</div>`;
                     }
                 }
             });
         }
         if ($content == "") {
+            document.querySelector("#pageIntroduction").innerHTML = `<h1 class='col-10 offset-1 text-warning mt-5 mb-5 display-1' style="text-shadow: 0 0 2rem rgb(255 199 32 / 40%), 0 0 8rem rgb(255 199 32 / 30%); font-weight: 900;\">${$hash.replace("#/", "").toUpperCase()}?</h1>`;
             $content = `<div class="col-12">`;
-            $content += `<p class="alert alert-warning">#4 Não encontramos nada relacioado a <b>${$hash.replace("#/", "")}</b>.</p>`;
+            $content += `<p class="alert alert-warning">ERROR #1: Não encontramos nada relacionado a <b>${$hash.replace("#/", "")}</b>. Tente procurar por outra categoria ou <a href="#/">volte para a página inicial</a>.</p>`;
             $content += `</div>`;
         }
-        
+
         console.log($hash + " " + $div + " " + $data);
         console.log($data);
         document.querySelector($div).innerHTML = $content;
     }
 
+    document.getElementById("year").innerHTML = year;
     document.querySelector("#content").innerHTML = "Carregando...";
 
+
+
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </html>

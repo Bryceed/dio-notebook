@@ -11,6 +11,7 @@
                     "title": "Calendário",
                     "description": "Simples sistema de calendário, gerando um calendário com os dias do mês atual.",
                     "file": "project-01.php",
+                    "url": "https://rydermais.000webhostapp.com/study/php/calendar-sample.php",
                     "difficulty": "Fácil",
                     "tags": [
                         "PHP",
@@ -18,7 +19,6 @@
                         "CSS",
                         "JavaScript"
                     ],
-                    "image": "project-01.png",
                     "video": "https://www.youtube.com/embed/1q2z3w4e5r6"
                 }
             ]
@@ -26,79 +26,16 @@
         {
             "CSS": [
                 {
-                    "title": "Projeto 1",
-                    "description": "Descrição do projeto 1",
-                    "file": "project-01.php"
+                    "title": "Tema: Just Dance Now",
+                    "description": "Refatoração do visual padrão do serviço",
+                    "image": "https://userstyles.org/style_screenshots/170677_after.png",
+                    "url": "https://userstyles.org/styles/170677/just-dance-nowadays"
                 },
                 {
-                    "title": "Projeto 2",
-                    "description": "Descrição do projeto 2",
-                    "file": "project-02.php"
-                },
-                {
-                    "title": "Projeto 3",
-                    "description": "Descrição do projeto 3",
-                    "file": "project-03.php"
-                },
-                {
-                    "title": "Projeto 4",
-                    "description": "Descrição do projeto 4",
-                    "file": "project-04.php"
-                },
-                {
-                    "title": "Projeto 5",
-                    "description": "Descrição do projeto 5",
-                    "file": "project-05.php"
-                },
-                {
-                    "title": "Projeto 6",
-                    "description": "Descrição do projeto 6",
-                    "file": "project-06.php"
-                },
-                {
-                    "title": "Projeto 7",
-                    "description": "Descrição do projeto 7",
-                    "file": "project-07.php"
-                },
-                {
-                    "title": "Projeto 8",
-                    "description": "Descrição do projeto 8",
-                    "file": "project-08.php"
-                },
-                {
-                    "title": "Projeto 9",
-                    "description": "Descrição do projeto 9",
-                    "file": "project-09.php"
-                },
-                {
-                    "title": "Projeto 10",
-                    "description": "Descrição do projeto 10",
-                    "file": "project-10.php"
-                },
-                {
-                    "title": "Projeto 11",
-                    "description": "Descrição do projeto 11",
-                    "file": "project-11.php"
-                },
-                {
-                    "title": "Projeto 12",
-                    "description": "Descrição do projeto 12",
-                    "file": "project-12.php"
-                },
-                {
-                    "title": "Projeto 13",
-                    "description": "Descrição do projeto 13",
-                    "file": "project-13.php"
-                },
-                {
-                    "title": "Projeto 14",
-                    "description": "Descrição do projeto 14",
-                    "file": "project-14.php"
-                },
-                {
-                    "title": "Projeto 15",
-                    "description": "Descrição do projeto 15",
-                    "file": "project-15.php"
+                    "title": "Tema: Descomplica",
+                    "description": "Criação de tema escuro para os estudantes <s>que queimavam os olhos</s> no serviço.",
+                    "image": "https://userstyles.org/style_screenshots/179728_after.jpeg",
+                    "url": "https://userstyles.org/styles/179728/global-dark-mode-descomplica-wip"
                 }
             ]
         }
