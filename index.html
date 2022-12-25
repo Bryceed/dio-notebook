@@ -1,111 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Pratice with code examples</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="/.dependencies/css/bootstrap.min.css" rel="stylesheet">
+    <title>Playbook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div id="menu">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#"><b>Codepark</b> </a><span class="badge bg-light" style="position: relative; left: -51px; top:17px; padding: 2px 4px 0px; background-color: rgba(222, 230, 232, .9) !important;"><b>BETA</b></span>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
-                                    </li>
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown button
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" href="#">Disabled</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-bold" href="#/"><b>Playbook</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#/php">PHP</a></li>
+                            <li><a class="dropdown-item" href="#/js">JavaScript</a></li>
+                            <li><a class="dropdown-item" href="#/html">HTML</a></li>
+                            <li><a class="dropdown-item" href="#/css">CSS</a></li>
+                            <li><a class="dropdown-item" href="#/mysql">MySQL</a></li>
+                            <li><a class="dropdown-item" href="#/git">Git</a></li>
+                            <li><a class="dropdown-item" href="#/nodejs">NodeJS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Bryceed?utm_source=playbook">GitHub</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
-    </div>
+    </nav>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                </div>
+            <div class="col-10 offset-1">
+                <h1>Playbook</h1>
+                <p>Playbook é um blog com códigos e tutoriais estudados (como um caderno digital).</p>
+                <p>Este é um projeto pessoal, que tem como objetivo registrar o que estou aprendendo.</p>
             </div>
         </div>
-    </div>
-
-    <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <!-- blog -->
-                <div class="card">
-                    <div class="card-header">
-                        <h1>Blog</h1>
+            <div class="col-10 offset-1">
+                    <div id="content" class="row"></div>
+
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="https://picsum.photos/300/200/?random" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="https://picsum.photos/300/200/?random" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="https://picsum.photos/300/200/?random" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card
+                </div>
             </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/showdown/dist/showdown.min.js" integrity="sha384-GP2+CwBlakZSDJUr+E4JvbxpM75i1i8+RKkieQxzuyDZLG+5105E1OfHIjzcXyWH" crossorigin="anonymous"></script>
-    <script>
-        
-    </script>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-warning text-center">
+        <p>Playbook - <span id="year"></span></p>
+    </footer>
 </body>
+<script>
+    // Events
+    window.addEventListener("hashchange", () => renderContent(hash = window.location.hash));
+    window.addEventListener("load", () => renderContent(hash = window.location.hash));
+
+    // Variables
+    var data = getContent();
+    var year = new Date().getFullYear().then((year) => document.getElementById("year").innerHTML = year);
+
+    // Functions
+    async function getContent() {
+        var data = await fetch("./sitemap.json").then(
+            (response) => {
+                if (!response.ok) {
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.json();
+            }
+        );
+        return data;
+    }
+
+    async function renderContent($hash = "#", $div = "#content", $data = data) {
+        // progress bar
+        var $progress = "<div class='progress col-12 progress-bar-striped progress-bar-animated' style='height: 100%;'></div>";
+        document.querySelector($div).innerHTML = $progress;
+
+        var $data = await $data;
+        var $content = "";
+
+        if ($hash == "#/" || $hash == "#") {
+            $data.projects.forEach((project) => {
+                for (var key in project) {
+                    var category = key;
+                    if (project[category].length != 0) {
+                        $content += `<div class="col-12"> <h2>${category}</h2> </div>`;
+                        for (var key in project[category]) {
+                            $content += `<div class="bg-muted col-12 col-md-6 col-lg-4 col-xl-3 col-sm-6 card g-3 px-3 py-3 gx-3">`;
+                            $content += `<h3>${project[category][key].title}</h3>`;
+                            $content += `<p>${project[category][key].description}</p>`;
+                            $content += `<a href="${project[category][key].file}" class="btn btn-primary">Ver</a>`;
+                            $content += `</div>`;
+                        }
+                    }
+                }
+            });
+        } else {
+            $data.projects.forEach((project) => {
+                for (var key in project) {
+                    if (key.toLowerCase() == $hash.replace("#/", "")) {
+                        var category = key;
+                        if (project[category].length != 0) {
+                            $content += `<div class="col-12"> <h2>${category}</h2> </div>`;
+                            for (var key in project[category]) {
+                                $content += `<div class="bg-muted col-12 col-md-6 col-lg-4 col-xl-3 col-sm-6 card g-3 px-3 py-3 gx-3">`;
+                                $content += `<h3>${project[category][key].title}</h3>`;
+                                $content += `<p>${project[category][key].description}</p>`;
+                                $content += `<a href="${project[category][key].file}" class="btn btn-primary">Ver</a>`;
+                                $content += `</div>`;
+                            }
+                        }
+                    } else if (project[key].length == 0 || project[key].length == undefined) {
+                        $content = `<div class="col-12">`;
+                        $content += `<p class="alert alert-warning">#0 Não há projetos criados.</p>`;
+                        $content += `</div>`;
+                    }
+                }
+            });
+        }
+        if ($content == "") {
+            $content = `<div class="col-12">`;
+            $content += `<p class="alert alert-warning">#4 Não encontramos nada relacioado a <b>${$hash.replace("#/", "")}</b>.</p>`;
+            $content += `</div>`;
+        }
+        
+        console.log($hash + " " + $div + " " + $data);
+        console.log($data);
+        document.querySelector($div).innerHTML = $content;
+    }
+
+    document.querySelector("#content").innerHTML = "Carregando...";
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
